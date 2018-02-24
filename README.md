@@ -32,3 +32,12 @@ cd CSharpLab
 ```
 dotnet run <programNumber> <arguments>
 ```
+
+## Contributing
+
+Since this is a repository for lab programs, PRs will be accepted only from contributers who are a part of the UVCE community. To submit a PR, a few guidelines are to be followed.
+
+1. Create a new branch with program number e.g. `program1`
+2. Use `git merge master`, on your branch, to get the latest code changes before submitting a PR.
+3. Create the pull request. The PR should not have any merge conflicts.
+4. PR should have the program number in the title, eg., `Program 3: Quadratic Equation`
