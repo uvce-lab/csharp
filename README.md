@@ -24,11 +24,7 @@ C# Lab programs.
 ## How to run the code
 
 1. Install .NET Core SDK: [Installation link](https://www.microsoft.com/net/learn/get-started/windows) 
-2. Switch directory to the project directory (The directory with CSharpLab.csproj file) 
-```
-cd CSharpLab
-```
-3. Pass appropriate arguments
+2. Pass appropriate arguments
 ```
 dotnet run <programNumber> <arguments>
 ```
