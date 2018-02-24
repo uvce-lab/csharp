@@ -28,7 +28,6 @@ C# Lab programs.
 ```
 cd CSharpLab
 ```
-
 3. Pass appropriate arguments
 ```
 dotnet run <programNumber> <arguments>
