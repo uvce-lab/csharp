@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Palindrome
+namespace CSharpLab.Palindrome
 {
-  class Program
+  class Runner
   {
-    public static void Main()
+    public static void EntryPoint(IEnumerable<string> args)
     {
       Console.Write("Enter number to check palindrome: ");
       string input = Console.ReadLine();

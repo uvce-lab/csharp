@@ -1,8 +1,8 @@
 using System.Linq;
 
-namespace Palindrome
+namespace CSharpLab.Palindrome
 {
-  class Palindrome
+  public class Palindrome
   {
     public static bool Check(long number)
     {
