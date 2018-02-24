@@ -1,8 +1,6 @@
 using System;
 using System.Linq;
 
-using CSharpLab.Palindrome;
-
 namespace CSharpLab
 {
   public class Runner
@@ -29,6 +27,11 @@ namespace CSharpLab
               CommandLineArgs.Runner.EntryPoint(args.ToList().Skip(1));
               break;
             }
+          case 4:
+            {
+              Boxing.Runner.EntryPoint(args.ToList().Skip(1));
+              break;
+            }
           default:
             {
               Console.WriteLine("Aborting. The program number is either not implemented yet or out of range.");
@@ -38,7 +41,7 @@ namespace CSharpLab
 
         return;
       }
-      
+
       Console.WriteLine("Aborting. Enter program number (0 - 18).");
     }
   }
