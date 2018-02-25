@@ -32,6 +32,11 @@ namespace CSharpLab
               Boxing.Runner.EntryPoint(args.ToList().Skip(1));
               break;
             }
+          case 12:
+            {
+              Calculator.Runner.EntryPoint();
+              break;
+            }
           default:
             {
               Console.WriteLine("Aborting. The program number is either not implemented yet or out of range.");
