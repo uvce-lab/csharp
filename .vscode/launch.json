@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/CSharpLab/bin/Debug/netcoreapp2.0/CSharpLab.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.0/CSharpLab.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CSharpLab",
+            "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "stopAtEntry": true,
             "internalConsoleOptions": "openOnSessionStart"
