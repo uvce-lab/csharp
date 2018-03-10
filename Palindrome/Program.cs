@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace CSharpLab.Palindrome
 {
-  class Runner
+  class Program
   {
-    public static void EntryPoint(IEnumerable<string> args)
+    static void Main(string []args)
     {
       Console.Write("Enter number to check palindrome: ");
       string input = Console.ReadLine();

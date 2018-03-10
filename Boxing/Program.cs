@@ -5,8 +5,7 @@ namespace CSharpLab.Boxing
 {
   public class Runner
   {
-
-    public static void EntryPoint(IEnumerable<string> args)
+    public static void Main()
     {
       double valueType = 1.414;
 
