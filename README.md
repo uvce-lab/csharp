@@ -24,9 +24,14 @@ C# Lab programs.
 ## How to run the code
 
 1. Install .NET Core SDK: [Installation link](https://www.microsoft.com/net/learn/get-started/windows) 
-2. Pass appropriate arguments
+2. `cd` into correct project folder
+  ```
+  # Example:
+  cd Palindrome
+  ```
+3. Pass appropriate arguments
 ```
-dotnet run <programNumber> <arguments>
+dotnet run <arguments>
 ```
 
 ## Contributing

@@ -4,7 +4,7 @@ namespace CSharpLab.Calculator
 {
   public class Runner
   {
-    public static void EntryPoint()
+    public static void Main()
     {
       do
       {
