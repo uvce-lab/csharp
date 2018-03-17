@@ -7,13 +7,13 @@ namespace SecondLargest
   {
     static void Main()
     {
-      Console.Write("Enter the numbers: ");
+      Console.Write("Enter the numbersInput: ");
 
       try
       {
-        var numbers = Console.ReadLine().Trim();
+        var numbersInput = Console.ReadLine().Trim();
 
-        var secondLargest = numbers
+        var secondLargest = numbersInput
         .Split()
         .Select(double.Parse)
         .OrderByDescending(p => p)
