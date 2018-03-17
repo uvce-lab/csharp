@@ -15,6 +15,12 @@ namespace CSharpLab.OperatorOverloading
       this._imag = imaginary;
     }
 
+    public static Complex operator +(Complex a, Complex b)
+    => new Complex(
+        a.Real + b.Real,
+        a.Imaginary + b.Imaginary
+      );
+
     public override string ToString()
     {
       var sign = this._imag < 0 ? '-' : '+';

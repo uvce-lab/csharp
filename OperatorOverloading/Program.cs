@@ -9,8 +9,7 @@ namespace CSharpLab.OperatorOverloading
       Console.WriteLine(new Complex(0, 0));
       Console.WriteLine(new Complex(0, 3));
       Console.WriteLine(new Complex(0, -5));
-      Console.WriteLine(new Complex(4, -5));
-      Console.WriteLine(new Complex(-10, -5));
+      Console.WriteLine(new Complex(1.414, -5) + new Complex(-10, -5));
     }
   }
 }
