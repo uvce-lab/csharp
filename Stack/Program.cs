@@ -10,7 +10,7 @@ namespace CSharpLab.Stack
 
       do
       {
-        Console.Write("STACK MENU\n1. Push Item\n2. Pop Item\nEnter your choice: ");
+        Console.Write("STACK MENU\n1. Push Item\n2. Pop Item\n3. Exit\nEnter your choice: ");
 
         var choice = Console.ReadLine().Trim();
 
@@ -33,6 +33,9 @@ namespace CSharpLab.Stack
               Console.WriteLine(e.Message);
             }
             break;
+
+          case "3":
+            return;
 
           default:
             Console.WriteLine("You entered an invalid choice");
