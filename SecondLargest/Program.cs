@@ -7,7 +7,7 @@ namespace SecondLargest
   {
     static void Main()
     {
-      Console.Write("Enter the numbersInput: ");
+      Console.Write("Enter the numbers: ");
 
       try
       {
