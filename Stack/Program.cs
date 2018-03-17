@@ -10,7 +10,7 @@ namespace CSharpLab.Stack
 
       do
       {
-        Console.Write("STACK MENU\n1. Push Item\n2. Pop Item\n3. Exit\nEnter your choice: ");
+        Console.Write("STACK MENU\n1. Push Item\n2. Pop Item\n3. Display Stack\n4. Display Stack length\n5. Exit\nEnter your choice: ");
 
         var choice = Console.ReadLine().Trim();
 
@@ -35,6 +35,14 @@ namespace CSharpLab.Stack
             break;
 
           case "3":
+            Console.WriteLine($"Stack contents: {Environment.NewLine}{stack}");
+            break;
+
+          case "4":
+            Console.WriteLine($"Stack contains {stack.Count} items.");
+            break;
+
+          case "5":
             return;
 
           default:

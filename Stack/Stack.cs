@@ -40,12 +40,12 @@ namespace CSharpLab.Stack
 
     public override string ToString()
     {
-      var representation = "";
+      var representation = "[";
       foreach(var item in _data) {
-        representation = $"{representation} {item}";
+        representation = $"{representation} '{item}'";
       }
 
-      return $"{representation} <- TOP";
+      return $"{representation} ] <- TOP";
     }
   }
 }
