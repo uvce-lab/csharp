@@ -6,10 +6,12 @@ namespace CSharpLab.OperatorOverloading
   {
     static void Main(string[] args)
     {
-      Console.WriteLine(new Complex(0, 0));
-      Console.WriteLine(new Complex(0, 3));
-      Console.WriteLine(new Complex(0, -5));
-      Console.WriteLine(new Complex(1.414, -5) + new Complex(-10, -5));
+      var firstNumber = new Complex(1.5, 4);
+      var secondNumber = new Complex(100, 0);
+
+      var result = firstNumber + secondNumber;
+      Console.WriteLine("Using overloaded '+' operator on Complex objects.");
+      Console.WriteLine($"({firstNumber}) + ({secondNumber}) = ({result})");
     }
   }
 }
