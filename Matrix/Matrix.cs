@@ -30,7 +30,7 @@ namespace CSharpLab.Matrix
         {
           result[i, j] = 0;
           for (int k = 0; k < a.Columns; ++k)
-            result[i, j] += a._data[i, k] + b._data[k, j];
+            result[i, j] += a._data[i, k] * b._data[k, j];
         }
       }
 
