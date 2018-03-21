@@ -5,5 +5,6 @@ namespace CSharpLab.InterfaceArrays
     void Input();
     double Area();
     double NumberOfPoints();
+    string Name { get; }
   }
 }

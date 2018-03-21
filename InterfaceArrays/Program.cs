@@ -1,12 +1,25 @@
 ﻿using System;
 
-namespace InterfaceArrays
+namespace CSharpLab.InterfaceArrays
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      IShape[] shapes = new IShape[]
+      {
+        new Circle()
+      };
+
+      foreach (IShape shape in shapes)
+      {
+        Console.WriteLine(shape.Name);
+
+        shape.Input();
+
+        Console.WriteLine($"Area: {shape.Area()}");
+        Console.WriteLine($"Number of points: {shape.NumberOfPoints()}{Environment.NewLine}");
+      }
     }
+  }
 }
