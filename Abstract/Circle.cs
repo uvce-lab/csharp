@@ -10,6 +10,7 @@ namespace CSharpLab.Abstract
     }
 
     private double radius;
+    public double Radius => radius;
     public override double Area()
     {
       var area = Math.PI * radius * radius;

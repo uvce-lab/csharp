@@ -6,11 +6,11 @@ namespace CSharpLab.Abstract
   {
     static void Main(string[] args)
     {
-      var triangle = new Circle(1);
-      Console.WriteLine($"{triangle.Area():0.0000}");
+      var circle = new Circle(1);
+      Console.WriteLine($"Area of circle with radius {circle.Radius}: {circle.Area():0.0000}");
 
-      triangle = new Circle(Math.Sqrt(1/Math.PI));
-      Console.WriteLine($"{triangle.Area():0.0000}");
+      var rectangle = new Rectangle(4, 9.8);
+      Console.WriteLine($"Area of rectangle with dimensions {rectangle.Height}*{rectangle.Width}: {rectangle.Area():0.0000}");
     }
   }
 }
