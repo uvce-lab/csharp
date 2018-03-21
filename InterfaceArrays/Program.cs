@@ -10,6 +10,7 @@ namespace CSharpLab.InterfaceArrays
       {
         new Circle(),
         new Rectangle(),
+        new Cuboid(),
       };
 
       foreach (IShape shape in shapes)
