@@ -15,7 +15,8 @@ namespace CSharpLab.LinkedList
 MENU:
 1. Add item to the beginning
 2. Display the list
-3. Exit
+3. Display number of nodes in the list
+4. Exit
 Enter your choice: ");
 
         var choice = Console.ReadLine().Trim();
@@ -33,6 +34,10 @@ Enter your choice: ");
             break;
           
           case "3":
+            Console.WriteLine($"The list contains {list.Count} node(s).");
+            break;
+
+          case "4":
             return;
           
           default:
