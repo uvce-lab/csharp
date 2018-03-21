@@ -8,7 +8,8 @@ namespace CSharpLab.InterfaceArrays
     {
       IShape[] shapes = new IShape[]
       {
-        new Circle()
+        new Circle(),
+        new Rectangle(),
       };
 
       foreach (IShape shape in shapes)
