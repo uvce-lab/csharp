@@ -16,9 +16,10 @@ MENU:
 1. Add item to the beginning
 2. Remove item from the beginning
 3. Add item to the end
-4. Display the list
-5. Display number of nodes in the list
-6. Exit
+4. Remove item from the end
+5. Display the list
+6. Display number of nodes in the list
+7. Exit
 Enter your choice: ");
 
         var choice = Console.ReadLine().Trim();
@@ -49,14 +50,25 @@ Enter your choice: ");
             break;
 
           case "4":
-            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
+            if (list.Count == 0)
+              Console.WriteLine("Underflow Exception: Cannot remove node from an empty list.");
+            else
+            {
+              var lastNode = list.Last;
+              list.RemoveLast();
+              Console.WriteLine($"Removed {lastNode.Value} from the list.");
+            }
             break;
 
           case "5":
-            Console.WriteLine($"The list contains {list.Count} node(s).");
+            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
             break;
 
           case "6":
+            Console.WriteLine($"The list contains {list.Count} node(s).");
+            break;
+
+          case "7":
             return;
 
           default:
