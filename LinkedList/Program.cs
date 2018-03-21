@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CSharpLab.LinkedList
 {
@@ -17,9 +18,10 @@ MENU:
 2. Remove item from the beginning
 3. Add item to the end
 4. Remove item from the end
-5. Display the list
-6. Display number of nodes in the list
-7. Exit
+5. Remove all matching nodes
+6. Display the list
+7. Display number of nodes in the list
+8. Exit
 Enter your choice: ");
 
         var choice = Console.ReadLine().Trim();
@@ -61,14 +63,32 @@ Enter your choice: ");
             break;
 
           case "5":
-            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
+            Console.Write("Enter query to remove all occurences: ");
+            var match = Console.ReadLine().Trim();
+
+            var temp = list.First;
+            var nodesToRemove = new List<LinkedListNode<string>>();
+            while (temp != null)
+            {
+              if (temp.Value == match)
+                nodesToRemove.Add(temp);
+              temp = temp.Next;
+            }
+
+            nodesToRemove.ForEach(p => list.Remove(p));
+
+            Console.WriteLine($"Removed {nodesToRemove.Count} nodes.");
             break;
 
           case "6":
-            Console.WriteLine($"The list contains {list.Count} node(s).");
+            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
             break;
 
           case "7":
+            Console.WriteLine($"The list contains {list.Count} node(s).");
+            break;
+
+          case "8":
             return;
 
           default:
