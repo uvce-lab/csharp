@@ -15,9 +15,10 @@ namespace CSharpLab.LinkedList
 MENU:
 1. Add item to the beginning
 2. Remove item from the beginning
-3. Display the list
-4. Display number of nodes in the list
-5. Exit
+3. Add item to the end
+4. Display the list
+5. Display number of nodes in the list
+6. Exit
 Enter your choice: ");
 
         var choice = Console.ReadLine().Trim();
@@ -42,14 +43,20 @@ Enter your choice: ");
             break;
 
           case "3":
-            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
+            Console.Write("Enter the item to insert at the end: ");
+            var lastItem = Console.ReadLine().Trim();
+            list.AddLast(lastItem);
             break;
 
           case "4":
-            Console.WriteLine($"The list contains {list.Count} node(s).");
+            Console.WriteLine($"The list contains:\n[{String.Join(" --> ", list)}]");
             break;
 
           case "5":
+            Console.WriteLine($"The list contains {list.Count} node(s).");
+            break;
+
+          case "6":
             return;
 
           default:
