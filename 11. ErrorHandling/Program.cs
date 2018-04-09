@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace ErrorHandling
+namespace CSharpLab.ErrorHandling
 {
   class Program
   {

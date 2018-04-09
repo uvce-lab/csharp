@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace JaggedArray
+namespace CSharpLab.JaggedArray
 {
   class Program
   {
